@@ -18,8 +18,8 @@ function load_img(){
 		hole_obj.scaleToWidth(50);
 		hole_obj.scaleToHeight(50);
 		hole_obj.set({
-			top:ball_y,
-			left:ball_x
+			top:hole_y,
+			left:hole_x
 		});
 		canvas.add(hole_obj);
 	});
@@ -84,7 +84,7 @@ function my_keydown(e)
 	function up()
 	{
 		// Write a code to move ball upward.
-		if(ball_y >=450){
+		if(ball_y >=0){
 			ball_y = ball_y - block_image_height;
 			console.log("block image height = " + block_image_height);
 			console.log("When up arrow pressed , X = " + ball_x + " , Y = " + ball_y);
